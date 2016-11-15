@@ -33,7 +33,7 @@ def make_string(correct_indices)
   string
 end
 
-@@lines = File.readlines("5desk.txt")
+@lines = File.readlines("5desk.txt")
 @@tries = 10
 @@correct_indices = []
 @@incorrect_characters = []
