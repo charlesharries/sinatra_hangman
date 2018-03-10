@@ -6,7 +6,7 @@ GEM
       rack
     sinatra (1.4.7)
       rack (~> 1.5)
-      rack-protection (~> 1.4)
+      rack-protection (~> 2.0)
       tilt (>= 1.3, < 3)
     tilt (2.0.5)
 
