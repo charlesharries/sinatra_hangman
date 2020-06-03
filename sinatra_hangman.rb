@@ -23,7 +23,7 @@ post '/' do
   if good_guess?(letter)
     update_game(letter)
   else
-    message = "That's not a good fucking guess. Try that one again, champ."
+    message = "That's not a good flippin guess. Try that one again."
   end
   erb :index, :locals => {:message => message}
 end
