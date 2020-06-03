@@ -4,14 +4,9 @@
   </head>
 
   <body>
-    <h1>This is a motherfucking hangman game.</h1>
-    <p>And it's more fucking perfect than the last guy's.</p>
-    <h3>Guess what: I did this with 8 CSS declarations.</h3>
-    <p>No 16GB Google Fonts, no gradient-meshed Facebook logos. Just a site so lightweight your two-year-old daughter could lift it over her fucking head.</p>
-    <h3>Let's fucking get to it.</h3>
-    <p>Hangman is the name of the game.</p>
+    <h1>Hangman time</h1>
     <p>You've got <%= session[:tries] %> tries left.</p>
-    <p>You already tried these characters, and they didn't fucking work: <%= session[:incorrect_characters].join(", ") %></p>
+    <p>You already tried these characters, and they didn't work: <%= session[:incorrect_characters].join(", ") %></p>
     <h2>
       <% @answer.split("").each_with_index do |letter, index| %>
         <% if session[:correct_indices].include?(index) %>
@@ -23,10 +18,10 @@
     </h2>
     <form name="submit-form" action="/" method="post">
       <p>
-        Gimme another guess, asshole:
+        Guess a letter:
         <input class="guessbox" type="text" name="guess" autofocus/>
       </p>
-      <input type="submit" value="Roll the dice motherfucker" />
+      <input type="submit" value="Roll the dice" />
     </form>
     <h3>
       <% if message %>
